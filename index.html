@@ -2,92 +2,180 @@
 <html lang="ru"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Термоленд: гости за ролики</title>
-<meta name="description" content="Два шага, как привести в Термоленд больше гостей почти бесплатно: контент-завод и акция «просмотры в обмен на сеанс». Под ключ. «Бизнес по-русски»">
+<meta name="description" content="Ваши клипы уже собирают сотни тысяч просмотров. Главная группа молчит. Два шага, как превратить просмотры в гостей почти бесплатно. «Бизнес по-русски»">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="ru_RU">
 <meta property="og:title" content="Термоленд: гости за ролики">
-<meta property="og:description" content="Два шага, как привести больше гостей почти бесплатно: контент-завод и акция «просмотры в обмен на сеанс». Под ключ.">
+<meta property="og:description" content="Ваши клипы собирают сотни тысяч просмотров. Два шага, как превратить их в гостей почти бесплатно.">
 <meta property="og:url" content="https://ilin20vek.github.io/termoland-predlozhenie/">
 <meta property="og:image" content="https://ilin20vek.github.io/termoland-predlozhenie/og.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="robots" content="noindex, nofollow">
-<meta name="theme-color" content="#04222c">
+<meta name="robots" content="noindex">
 <style>
-:root{--fon:#04222c;--glub:#031a22;--tekst:#fff;--mut:#a9ccd4;--akcent:#22c3e0;--solnce:#ff8a5c;--karta:rgba(255,255,255,.07);--lin:rgba(255,255,255,.16)}
+@font-face{font-family:Rubik;src:url(fonts/rubik-400.woff2) format('woff2');font-weight:400;font-display:swap}
+@font-face{font-family:Rubik;src:url(fonts/rubik-700.woff2) format('woff2');font-weight:700;font-display:swap}
+@font-face{font-family:Rubik;src:url(fonts/rubik-800.woff2) format('woff2');font-weight:800;font-display:swap}
+:root{--fon:#04222c;--glub:#031a22;--akcent:#22c3e0;--solnce:#ff8a5c;--pena:#e6f6f9;--mut:#9fc3cc;--kart:#0a3340}
 *{box-sizing:border-box}
-body{margin:0;background:var(--glub);color:var(--tekst);font:400 18px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;-webkit-text-size-adjust:100%}
-.w{width:min(760px,100% - 32px);margin-inline:auto}
-section{padding:44px 0;border-top:1px solid var(--lin)}
-.hero{padding:56px 0 44px;border:0;background:radial-gradient(700px 380px at 80% 0,rgba(34,195,224,.28),transparent 65%),var(--fon)}
-.e{font-weight:700;font-size:14px;letter-spacing:.14em;text-transform:uppercase;color:var(--akcent);margin:0 0 14px}
-h1{font-size:clamp(32px,8vw,52px);line-height:1.05;letter-spacing:-.02em;margin:0 0 18px;font-weight:800}
-h2{font-size:clamp(24px,5.6vw,32px);line-height:1.15;margin:0 0 16px;font-weight:800}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--fon);color:var(--pena);font:400 17px/1.55 Rubik,system-ui,sans-serif;-webkit-text-size-adjust:100%}
+.w{max-width:1040px;margin:0 auto;padding:0 16px}
+h1,h2,h3{font-weight:800;line-height:1.1;margin:0;color:#fff}
+h1{font-size:clamp(34px,8.5vw,68px);letter-spacing:-.02em}
+h2{font-size:clamp(26px,6vw,42px);letter-spacing:-.01em;margin-bottom:14px}
+h3{font-size:20px;margin-bottom:6px}
 p{margin:0 0 14px}
-.l{font-size:20px;color:#e4f3f6}
-.m{color:var(--mut);font-size:16px}
-.n{display:inline-block;background:var(--solnce);color:#02121a;font-weight:800;border-radius:999px;padding:3px 14px;margin-bottom:12px;font-size:15px}
-ul{padding-left:20px;margin:0 0 14px}li{margin-bottom:8px}
-.k{background:var(--karta);border:1px solid var(--lin);border-radius:18px;padding:18px 20px;margin:0 0 12px}
-.k b{display:block;font-size:20px;margin-bottom:4px}
-table{width:100%;border-collapse:collapse;font-size:16px;margin:0 0 12px}
-th,td{text-align:left;padding:9px 8px;border-bottom:1px solid var(--lin)}
-th{color:var(--mut);font-weight:500}
-td:last-child,th:last-child{text-align:right;white-space:nowrap}
-.b{display:inline-block;background:var(--solnce);color:#02121a;font-weight:800;text-decoration:none;border-radius:999px;padding:16px 28px;margin-top:6px}
-.f{font-size:14px;color:var(--mut)}
+.eb{display:inline-block;color:var(--akcent);font-weight:700;font-size:13px;letter-spacing:.12em;text-transform:uppercase;margin-bottom:14px}
+.hero{background:radial-gradient(120% 80% at 80% 0,#0d5266 0,transparent 60%),linear-gradient(#04222c,#031a22);padding:48px 0 70px;position:relative;overflow:hidden}
+.hero .lid{font-size:clamp(18px,4.5vw,22px);color:var(--pena);max-width:640px;margin:20px 0 26px}
+.hero .big{display:flex;gap:10px;flex-wrap:wrap;margin:0 0 26px}
+.hero .big div{background:rgba(255,255,255,.07);border:1px solid rgba(34,195,224,.35);border-radius:16px;padding:12px 16px}
+.hero .big b{display:block;font-size:30px;font-weight:800;color:var(--akcent);line-height:1}
+.hero .big span{font-size:13px;color:var(--mut)}
+.btn{display:inline-block;background:var(--solnce);color:#2a0f06;font-weight:800;text-decoration:none;padding:16px 28px;border-radius:999px;font-size:18px;box-shadow:0 8px 24px rgba(255,138,92,.35)}
+.btn:active{transform:translateY(1px)}
+.sub{color:var(--mut);font-size:14px;margin-top:14px}
+.wave{display:block;width:100%;height:46px;margin-top:-1px;background:var(--glub)}
+.wave svg{display:block;width:100%;height:100%}
+section{padding:54px 0}
+section.alt{background:var(--glub)}
+.lead{color:var(--mut);max-width:680px}
+.clips{display:grid;grid-template-columns:1fr;gap:20px;margin-top:22px}
+.clip{margin:0;background:var(--kart);border-radius:20px;overflow:hidden;border:1px solid rgba(34,195,224,.2)}
+.ph{position:relative;aspect-ratio:9/16;background:#02121a;max-height:560px}
+.ph iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+figcaption{padding:14px 16px;display:flex;flex-direction:column;gap:2px}
+figcaption b{font-size:22px;color:var(--solnce);font-weight:800}
+figcaption span{color:var(--mut);font-size:14px}
+figcaption a{color:var(--akcent);font-size:14px;margin-top:6px}
+.cards{display:grid;gap:14px;margin-top:22px}
+.card{background:var(--kart);border-radius:20px;padding:20px;border:1px solid rgba(34,195,224,.2)}
+.card .n{font-size:44px;font-weight:800;color:var(--akcent);line-height:1}
+.card.hot{border-color:var(--solnce)}
+.card.hot .n{color:var(--solnce)}
+.card p{margin:8px 0 0;color:var(--mut);font-size:15px}
+.vs{display:grid;grid-template-columns:1fr;gap:12px;margin:22px 0}
+.vs>div{border-radius:20px;padding:22px}
+.vs .a{background:#3a1a14;border:1px solid var(--solnce)}
+.vs .b2{background:#073b46;border:1px solid var(--akcent)}
+.vs b{font-size:56px;font-weight:800;line-height:1;display:block}
+.vs .a b{color:var(--solnce)}.vs .b2 b{color:var(--akcent)}
+.vs span{color:var(--pena)}
+.bars{margin-top:20px}
+.b{display:grid;grid-template-columns:96px 1fr;align-items:center;gap:8px;position:relative;margin:7px 0;font-size:14px}
+.b span{color:var(--pena)}
+.b i{display:block;height:20px;border-radius:0 10px 10px 0;background:linear-gradient(90deg,#1396ad,var(--akcent));min-width:4px}
+.b{grid-template-columns:96px 1fr}
+.b b{position:absolute;right:0;top:50%;transform:translateY(-50%);font-weight:700;font-size:12px;color:#031a22;padding-right:8px;display:none}
+.b{grid-template-areas:"n bar";}
+.bn{font-size:12px;color:var(--mut)}
+.val{font-size:12px;color:var(--mut);margin-left:6px}
+.step{counter-increment:s;background:var(--kart);border-radius:24px;padding:24px 20px;margin:20px 0;border:1px solid rgba(34,195,224,.2)}
+.step .num{display:inline-flex;width:40px;height:40px;border-radius:50%;background:var(--akcent);color:#031a22;font-weight:800;align-items:center;justify-content:center;margin-bottom:10px}
+ul{padding-left:20px;margin:0 0 14px}li{margin:6px 0}
+.ladder{display:flex;flex-direction:column;gap:8px;margin:20px 0}
+.rung{display:flex;justify-content:space-between;align-items:center;border-radius:14px;padding:14px 18px;background:#073b46;border:1px solid var(--akcent);font-weight:700}
+.rung:nth-child(1){width:55%}.rung:nth-child(2){width:70%}.rung:nth-child(3){width:85%}.rung:nth-child(4){width:100%;background:var(--solnce);color:#2a0f06;border-color:var(--solnce)}
+.rung b{font-size:20px;font-weight:800}
+.mech{display:grid;gap:12px;margin-top:16px}
+.mech>div{background:rgba(255,255,255,.05);border-radius:16px;padding:16px}
+.mech b{color:var(--solnce)}
+.note{color:var(--mut);font-size:13px;margin-top:18px}
+.cta{background:linear-gradient(135deg,#0d5266,#073b46);text-align:center;padding:60px 0}
+.cta h2{margin-bottom:14px}
+.cta p{color:var(--pena);max-width:560px;margin:0 auto 24px}
+.who{display:flex;gap:14px;align-items:center;justify-content:center;margin-top:26px;color:var(--mut);font-size:14px;text-align:left}
+.who img{width:56px;height:56px;border-radius:50%;object-fit:cover}
+.who b{color:#fff;display:block}
+.sticky{position:fixed;left:0;right:0;bottom:0;padding:10px 16px;background:rgba(3,26,34,.94);backdrop-filter:blur(6px);text-align:center;z-index:5;border-top:1px solid rgba(34,195,224,.3)}
+.sticky .btn{padding:12px 22px;font-size:16px;width:100%;max-width:420px}
+body{padding-bottom:70px}
+@media(min-width:760px){
+ body{font-size:18px}
+ .clips{grid-template-columns:repeat(3,1fr)}
+ .cards{grid-template-columns:repeat(3,1fr)}
+ .vs{grid-template-columns:1fr 1fr}
+ .mech{grid-template-columns:repeat(3,1fr)}
+ .step{padding:34px}
+ .b{grid-template-columns:130px 1fr}
+ .sticky{display:none}body{padding-bottom:0}
+ section{padding:80px 0}
+}
 </style></head><body>
-
 <header class="hero"><div class="w">
-<p class="e">Предложение для команды Термоленда</p>
-<h1>Самый дешёвый способ привести гостей - вертикальные ролики</h1>
-<p class="l">Два шага. Первый делаем мы, второй придумываем вместе и тоже ведём под ключ.</p>
-<p class="m">Игорь Ильин, «Бизнес по-русски» и студия</p>
+<span class="eb">Предложение для команды Термоленда</span>
+<h1>Ваши клипы собирают сотни тысяч просмотров. Пусть они приводят гостей</h1>
+<p class="lid">Два шага. Первый делаем мы: ролики каждый день на всех площадках. Второй придумываем вместе: блогеры снимают, набирают просмотры и получают бесплатный сеанс.</p>
+<div class="big"><div><b>405 тыс.</b><span>лучший клип, баня в Бутово</span></div><div><b>1 203</b><span>клипа в городских группах за полгода</span></div><div><b>0</b><span>клипов в главной группе за полгода</span></div></div>
+<a class="btn" href="#svyaz">Созвониться на 20 минут</a>
+<div class="sub">Игорь Ильин, «Бизнес по-русски» и студия</div>
 </div></header>
+<div class="wave"><svg viewBox="0 0 1200 46" preserveAspectRatio="none"><path d="M0 0C150 40 300 40 450 20S750 0 900 20 1100 40 1200 10V0z" fill="#031a22" opacity="0"/><path d="M0 20C150 50 300 -10 450 20S750 50 900 20 1100 -10 1200 20V0H0z" fill="#04222c"/></svg></div>
 
-<section><div class="w">
-<h2>Что в соцсетях сейчас</h2>
-<div class="k"><b>Главная группа ВКонтакте - 22,5 тыс. человек</b>за последние полгода ни одного клипа.</div>
-<div class="k"><b>YouTube сети - 252 подписчика</b>площадка, где ролики быстро находят новых людей, у сети почти пустая.</div>
-<div class="k"><b>Городские группы - клип раз в 2-4 дня</b>когда клип попадает в ленту, он набирает в разы больше обычного: лучший у Вас - 405 тысяч просмотров (разбор 23.11.2026).</div>
-<p>Каждый день без роликов - гости, которые выбрали другое место, потому что о нём рассказали в ленте. А рассказывает о бане и бассейне чаще всего короткий вертикальный ролик.</p>
-<p class="f">Данные по открытым группам ВКонтакте и каналу YouTube, снимок 24.11.2026.</p>
+<section class="alt"><div class="w">
+<span class="eb">Что у Вас уже работает</span>
+<h2>Вот что Ваши курорты уже сняли сами</h2>
+<p class="lead">Три клипа из Ваших городских групп. Они набрали больше трёхсот тысяч просмотров каждый. Люди смотрят баню, пар и воду. Остаётся научиться делать это каждый день.</p>
+<div class="clips"><figure class="clip"><div class="ph"><iframe loading="lazy" src="https://vk.com/video_ext.php?oid=-210900553&id=456239690&hd=2" allow="autoplay; encrypted-media; fullscreen; picture-in-picture" allowfullscreen title="Клип Термоленда, Бутово, 9 секунд"></iframe></div><figcaption><b>405 тысяч просмотров</b><span>Бутово, 9 секунд</span><a href="https://vk.com/video-210900553_456239690" target="_blank" rel="noopener">Открыть во ВКонтакте</a></figcaption></figure><figure class="clip"><div class="ph"><iframe loading="lazy" src="https://vk.com/video_ext.php?oid=-224885444&id=456240089&hd=2" allow="autoplay; encrypted-media; fullscreen; picture-in-picture" allowfullscreen title="Клип Термоленда, Пенза, 11 секунд"></iframe></div><figcaption><b>349 тысяч просмотров</b><span>Пенза, 11 секунд</span><a href="https://vk.com/video-224885444_456240089" target="_blank" rel="noopener">Открыть во ВКонтакте</a></figcaption></figure><figure class="clip"><div class="ph"><iframe loading="lazy" src="https://vk.com/video_ext.php?oid=-227198652&id=456239396&hd=2" allow="autoplay; encrypted-media; fullscreen; picture-in-picture" allowfullscreen title="Клип Термоленда, Путилково, 15 секунд"></iframe></div><figcaption><b>318 тысяч просмотров</b><span>Путилково, 15 секунд</span><a href="https://vk.com/video-227198652_456239396" target="_blank" rel="noopener">Открыть во ВКонтакте</a></figcaption></figure></div>
+<p class="note">Просмотры по счётчику ВКонтакте на 24.11.2026.</p>
 </div></section>
 
 <section><div class="w">
-<span class="n">Шаг 1</span>
+<span class="eb">Что в соцсетях сейчас</span>
+<h2>Каждый день без роликов в главной группе и на YouTube - это упущенные гости</h2>
+<p class="lead">Городские группы выпускают клипы. Главная группа сети и YouTube стоят.</p>
+<div class="vs"><div class="a"><b>0</b><span>клипов в главной группе (22,5 тыс. подписчиков) за последние полгода</span></div><div class="b2"><b>1 203</b><span>клипа в 17 городских группах за те же полгода, около 6,5 в день</span></div></div>
+<div class="cards">
+<div class="card hot"><div class="n">252</div><h3>подписчика у сети на YouTube</h3><p>Площадка, где ролики быстро находят новых людей. У сети она почти пустая.</p></div>
+<div class="card"><div class="n">2-4 дня</div><h3>между клипами в городах</h3><p>Курорты снимают, но без общего плана и без привязки к гостям.</p></div>
+<div class="card"><div class="n">405 тыс.</div><h3>лучший клип сети</h3><p>Одна баня на 9 секунд собрала больше просмотров, чем главная группа за полгода.</p></div>
+</div>
+<h3 style="margin-top:34px">Просмотры клипов по городским группам за полгода</h3>
+<div class="bars"><div class="b"><span>Пенза</span><div style="display:flex;align-items:center"><i style="width:88,0%"></i><em class="val" style="font-style:normal">2,67 млн</em></div></div><div class="b"><span>Путилково</span><div style="display:flex;align-items:center"><i style="width:53,1%"></i><em class="val" style="font-style:normal">1,61 млн</em></div></div><div class="b"><span>Ярославль</span><div style="display:flex;align-items:center"><i style="width:48,1%"></i><em class="val" style="font-style:normal">1,46 млн</em></div></div><div class="b"><span>Бутово</span><div style="display:flex;align-items:center"><i style="width:47,3%"></i><em class="val" style="font-style:normal">1,44 млн</em></div></div><div class="b"><span>Новокузнецк</span><div style="display:flex;align-items:center"><i style="width:44,6%"></i><em class="val" style="font-style:normal">1,35 млн</em></div></div><div class="b"><span>Ботаническая</span><div style="display:flex;align-items:center"><i style="width:44,1%"></i><em class="val" style="font-style:normal">1,34 млн</em></div></div><div class="b"><span>Физтех</span><div style="display:flex;align-items:center"><i style="width:42,7%"></i><em class="val" style="font-style:normal">1,30 млн</em></div></div><div class="b"><span>Оренбург</span><div style="display:flex;align-items:center"><i style="width:42,5%"></i><em class="val" style="font-style:normal">1,29 млн</em></div></div><div class="b"><span>Зеленоград</span><div style="display:flex;align-items:center"><i style="width:37,1%"></i><em class="val" style="font-style:normal">1,13 млн</em></div></div><div class="b"><span>Красноярск</span><div style="display:flex;align-items:center"><i style="width:37,0%"></i><em class="val" style="font-style:normal">1,12 млн</em></div></div><div class="b"><span>Пулковский</span><div style="display:flex;align-items:center"><i style="width:35,3%"></i><em class="val" style="font-style:normal">1,07 млн</em></div></div><div class="b"><span>Белорусская</span><div style="display:flex;align-items:center"><i style="width:34,7%"></i><em class="val" style="font-style:normal">1,05 млн</em></div></div><div class="b"><span>Внуково</span><div style="display:flex;align-items:center"><i style="width:32,8%"></i><em class="val" style="font-style:normal">1,00 млн</em></div></div><div class="b"><span>Щёлково</span><div style="display:flex;align-items:center"><i style="width:27,6%"></i><em class="val" style="font-style:normal">0,84 млн</em></div></div><div class="b"><span>РИО</span><div style="display:flex;align-items:center"><i style="width:27,5%"></i><em class="val" style="font-style:normal">0,84 млн</em></div></div><div class="b"><span>Краснодар</span><div style="display:flex;align-items:center"><i style="width:19,9%"></i><em class="val" style="font-style:normal">0,60 млн</em></div></div><div class="b"><span>Речной</span><div style="display:flex;align-items:center"><i style="width:18,4%"></i><em class="val" style="font-style:normal">0,56 млн</em></div></div></div>
+<p class="note">Данные по открытым группам ВКонтакте и каналу YouTube, снимок 24.11.2026. Клипы за 24.05-24.11.2026.</p>
+</div></section>
+
+<section class="alt"><div class="w">
+<span class="eb">Шаг 1</span>
 <h2>Контент-завод: два ролика в день, каждый месяц</h2>
-<p>Настраиваем поток, который не зависит от настроения и отпусков: <b>два ролика в день во ВКонтакте и два на YouTube</b>, каждый день, весь месяц и дальше.</p>
-<ul>
-<li>Для сети: около 120 роликов в месяц на площадку.</li>
-<li>Если подключаем городские группы: по одному ролику на курорт в день, для 17 курортов около 510 в месяц.</li>
-<li>Свои съёмки Ваших курортов и наши. Монтаж, подписи, выкладка, разбор по цифрам - на нас.</li>
-</ul>
-<p>Начать можно с одного курорта и расширять.</p>
+<div class="vs"><div class="b2"><b>120</b><span>роликов в месяц на одну площадку: 2 в день во ВК и 2 на YouTube</span></div><div class="b2"><b>510</b><span>роликов в месяц, если по одному в день на каждый из 17 курортов</span></div></div>
+<p>Мы берём съёмку: Вашу и нашу. Монтируем, подписываем, выкладываем и разбираем по цифрам, что залетело и почему. Подачу, которая работает, повторяем на всех курортах.</p>
+<p><b>Начинаем с одного курорта.</b> Через неделю видно число.</p>
 </div></section>
 
 <section><div class="w">
-<span class="n">Шаг 2</span>
+<span class="eb">Шаг 2</span>
 <h2>Акция: просмотры в обмен на сеанс</h2>
-<p>Блогер приходит, парится, снимает ролик у себя на странице. Набрал просмотры - получает бесплатный сеанс. Для курорта это пустое место в будни, а Вы получаете рекламу, которая стоит намного дороже: живой ролик от человека, которому его подписчики верят.</p>
-<p>Привязываем шкалу к Вашим настоящим сеансам: на сайтах курортов это 2, 3 и 4 часа и «Весь день» (будни, снимок 24.11.2026). Чем длиннее сеанс, тем больше просмотров за него просим.</p>
-<p>Три механики на выбор, цифры подберём под Вашу загрузку:</p>
-<div class="k"><b>1. Лесенка</b>1 000 просмотров - 2 часа, 2 000 - 3 часа, 3 000 - 4 часа, 5 000 - весь день. Чем больше людей посмотрело, тем дольше сеанс.</div>
-<div class="k"><b>2. Сеанс на компанию</b>5 000 просмотров - 3 часа для блогера и друга. Приводит нового гостя, который иначе не пришёл бы.</div>
-<div class="k"><b>3. Бонус за залёт</b>Ролик набрал 20 000 и больше - день для блогера и до трёх друзей, плюс мы предлагаем продолжить сотрудничество.</div>
-<p><b>Как всё честно:</b></p>
-<ul>
-<li>просмотры считаем по скриншоту статистики поста на 7-й день;</li>
-<li>ролик блогера идёт с пометкой «Реклама» и маркировкой (erid): сеанс за ролик - это бартер, а он считается рекламой. С Вашим юристом сверим;</li>
-<li>сеансы действуют в будни и в часы, которые Вы назовёте.</li>
-</ul>
+<p class="lead">Блогер приходит, парится и снимает ролик. Набрал просмотры - получает бесплатный сеанс. В будни у Вас есть пустое место, и оно ничего не стоит, пока его никто не занимает.</p>
+<div class="ladder">
+<div class="rung"><span>1 000 просмотров</span><b>2 часа</b></div>
+<div class="rung"><span>2 000 просмотров</span><b>3 часа</b></div>
+<div class="rung"><span>3 000 просмотров</span><b>4 часа</b></div>
+<div class="rung"><span>5 000 просмотров</span><b>весь день</b></div>
+</div>
+<p class="note">Шкала привязана к настоящим сеансам: 2, 3, 4 часа и «Весь день» по будням (сайты курортов, снимок 24.11.2026). Пороги - наше предложение, сдвинем под Вас.</p>
+<div class="mech">
+<div><h3><b>Лесенка</b></h3><p>Чем больше просмотров, тем длиннее сеанс. Всё по шкале выше.</p></div>
+<div><h3><b>Сеанс на компанию</b></h3><p>5 000 просмотров: 3 часа на блогера и друга. Новые гости приходят сами.</p></div>
+<div><h3><b>Бонус за залёт</b></h3><p>20 000 просмотров и больше: день для блогера и до трёх друзей. И предложение продолжить сотрудничество.</p></div>
+</div>
+<h3 style="margin-top:30px">Как всё честно</h3>
+<ul><li>Просмотры считаем по скриншоту статистики на 7-й день.</li><li>Ролик с пометкой «Реклама» и маркировкой (erid): бартер считается рекламой, с юристом сверим.</li><li>Сеансы в будни и в часы, которые назовёт Термоленд.</li></ul>
 </div></section>
 
-<section><div class="w">
-<h2>Агентство и студия берут всё под ключ</h2>
-<p>Ролики, акция, приём блогеров, счёт просмотров, выдача сеансов, отчёт по Вашим же цифрам. Вам остаётся утвердить условия и выдавать сеансы по списку.</p>
-<p class="l"><b>Давайте созвонимся и обсудим сотрудничество.</b> 20 минут: покажу разбор Ваших клипов, и решим, с какого курорта начинать.</p>
+<section class="alt"><div class="w">
+<span class="eb">Под ключ</span>
+<h2>Агентство и студия берут всё на себя</h2>
+<p>Ролики, акция, приём блогеров, счёт просмотров, выдача сеансов и отчёт по Вашим цифрам. Вам остаётся сказать, в какие часы свободно.</p>
 </div></section>
 
+<section class="cta" id="svyaz"><div class="w">
+<h2>Давайте созвонимся и обсудим сотрудничество</h2>
+<p>20 минут: покажу разбор Ваших клипов и решим, с какого курорта начинать.</p>
+<span class="btn">Созвонимся, когда Вам удобно</span>
+<div class="who"><img src="i/igor.webp" alt="Игорь Ильин"><div><b>Игорь Ильин</b>«Бизнес по-русски» и студия</div></div>
+</div></section>
+<div class="sticky"><a class="btn" href="#svyaz">Созвониться на 20 минут</a></div>
 </body></html>
